@@ -15,6 +15,16 @@
                         <div class="flex-shrink-0"><span class="text-primary">January 2019 - present</span></div>
                     </div>
 
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Stenniz Music</h3>
+                            <div class="subheading mb-3">Web developer</div>
+                            <p>During my second year of school, I got an interinship at Steniz Music. My job was to create a commercial viable website to promote the workshops the company provided</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2020 - January 2021</span></div>
+                    </div>
+
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Stock clerk</h3>
