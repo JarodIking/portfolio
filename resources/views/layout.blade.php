@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Porfolio</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
@@ -26,10 +26,10 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="exp">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="edu">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="interests">Interests</a></li>
                 </ul>
             </div>

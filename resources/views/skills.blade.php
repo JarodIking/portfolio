@@ -12,12 +12,44 @@
                         <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
                         <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
                         <li class="list-inline-item"><i class="fab fa-php"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-jquery"></i></li>
                         <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-csharp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-
                     </ul>
+                    <!-- other skills -->
+                    <div class="subheading mb-3">Other languages</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            C#
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            C++
+                        </li>
+                    </ul>
+                    <br>
+
+                    <!-- other libraries -->
+                    <div class="subheading mb-3">Other libraries</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Jquery
+                        </li>
+                    </ul>
+                    <br>
+
+                    <!-- frameworks -->
+
+                    <div class="subheading mb-3">Frameworks</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fab fa-laravel"></i></span>
+                            Laravel
+                        </li>
+                    </ul>
+                    <br>
+
+                    <!-- workflow -->
                     <div class="subheading mb-3">Workflow</div>
                     <ul class="fa-ul mb-0">
                         <li>

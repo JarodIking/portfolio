@@ -6,6 +6,15 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
 
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Deliverer</h3>
+                            <div class="subheading mb-3">Wit-lof</div>
+                            <p>My primary job here is to deliver food too your doorstep. I mostly deliver with a moped but also sometimes with the car. At times when it's not busy I help around in the kitchen</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2019 - present</span></div>
+                    </div>
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Stock clerk</h3>
@@ -32,16 +41,6 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">January 2019 - juli 2019</span></div>
                     </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Deliverer</h3>
-                            <div class="subheading mb-3">Wit-lof</div>
-                            <p>My primary job here is to deliver food too your doorstep. I mostly deliver with a moped but also sometimes with the car. At times when it's not busy I help around in the kitchen</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2019 - present</span></div>
-                    </div>
-
 
 
 
