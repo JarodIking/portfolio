@@ -31,6 +31,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="exp">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="edu">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="websites">Websites</a></li>
                 </ul>
             </div>
         </nav>

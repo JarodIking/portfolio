@@ -39,7 +39,6 @@
                     <br>
 
                     <!-- frameworks -->
-
                     <div class="subheading mb-3">Frameworks</div>
                     <ul class="fa-ul mb-0">
                         <li>
@@ -48,6 +47,27 @@
                         </li>
                     </ul>
                     <br>
+
+
+                    <!-- server -->
+                    <div class="subheading mb-3">server-management</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            SQL
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Nginx
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Linux
+                        </li>
+
+                    </ul>
+                    <br>
+
 
                     <!-- workflow -->
                     <div class="subheading mb-3">Workflow</div>

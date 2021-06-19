@@ -37,3 +37,23 @@ Route::get('/interests', function () {
     return view('interests');
 });
 
+Route::get('/websites', function () {
+    return view('web');
+});
+
+
+//external Websites
+Route::get('/stennizworkshops.nl', function(){
+    return redirect('https://stennizworkshops.nl');
+});
+
+Route::get('/50plusroadtrip.nl', function(){
+    return redirect('https://50plusroadtrip.nl');
+});
+
+Route::get('/jarodiking.com', function(){
+    return redirect('https://jarodiking.com');
+});
+
+
+
