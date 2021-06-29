@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Response;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +42,10 @@ Route::get('/websites', function () {
     return view('web');
 });
 
+Route::get('/projects', function () {
+    return view('projects');
+});
+
 
 //external Websites
 Route::get('/stennizworkshops.nl', function(){
@@ -55,5 +60,16 @@ Route::get('/jarodiking.com', function(){
     return redirect('https://jarodiking.com');
 });
 
+
+//downloads
+
+Route::get('/downloadTheInvaders', function()
+{
+    $file_name = "TheInvaders.zip";
+    $path = storage_path().'/'.'app'.'/public/'.$file_name;
+    if (file_exists($path)) {
+        return Response::download($path);
+    }
+});
 
 
