@@ -15,6 +15,7 @@
                             <br>
                             <p class="mb-0">When you start this game you'll see a row of invaders that will shoot at you. It is your job to shoot these invaders and win the day. When you have shot all the invader you'll advance to the next level. Each level you advance, the game will get harder and harder. There will be more aliens and the aliens will shoot more and more. Make sure you dont die and that the aliens dont reach you!</p>
                             <br>
+                            <p class="mb-0">Github link: <a href="https://github.com/JarodIking/Game-C-">https://github.com/JarodIking/Game-C-</a><p>
                             <p class="mb-0">Requirements</p>
                             <ul class="mb-0">
                                 <li>Windows 10 or greater</li>
