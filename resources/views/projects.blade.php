@@ -22,7 +22,6 @@
                                 <li>intel i3 or greater</li>
                                 <li>1080p resolution or greater</li>
                             </ul>
-
                         </div>
                         <div class="flex-shrink-0"><a href="downloadTheInvaders"><i class="fas fa-download"></a></i></div>
                     </div>
