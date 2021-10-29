@@ -11,7 +11,6 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">ICT Campus</h3>
                             <div class="subheading mb-3">MBO-4</div>
-                            <p>GPA: 3.56</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2019 - Present</span></div>
                     </div>
