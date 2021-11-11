@@ -28,7 +28,7 @@
                             </div>
                             <br/>
 
-                            <!-- Content List -->
+                            <!-- Content List --> 
                             <p class="mb-0">Requirements</p>
                             <ul class="mb-0">
                                 <li>Windows 10 or greater</li>
