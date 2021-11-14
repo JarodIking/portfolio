@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             userSeeder::class,
+            tabSeeder::class,
+            iconSeeder::class,
+            contentSeeder::class,
+            listitemSeeder::class,
+            socialSeeder::class,
         ]);
     }
 }
