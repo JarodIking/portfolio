@@ -20,12 +20,11 @@ class CreateContentTable extends Migration
 
             $table->id();
             $table->foreignId('tabs')->constrained('tabs');
-            $table->foreignId('icons')->constrained('icons');
-            $table->string('title', 15);
-            $table->string('sub_title', 15)->nullable();
-            $table->string('description')->nullable();
-            $table->string('from', 15)->nullable();
-            $table->string('to', 15)->nullable();
+            $table->string('title', 100)->nullable();
+            $table->string('sub_title', 100)->nullable();
+            $table->longText('description')->nullable();
+            $table->string('from', 50)->nullable();
+            $table->string('to', 50)->nullable();
             $table->string('link', 200)->nullable();
             $table->datetime('deleted')->nullable();
             $table->datetime('updated')->nullable();   
@@ -43,7 +42,6 @@ class CreateContentTable extends Migration
         //drop foreign key
         Schema::table('content', function (Blueprint $table) {
             $table->dropForeign(['tabs']);
-            $table->dropForeign(['icons']);
         });
         
         Schema::dropIfExists('content');

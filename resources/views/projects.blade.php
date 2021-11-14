@@ -3,8 +3,8 @@
 @section('content')
 
             <!-- Interests-->
-            <section class="allround-section" id="interests">
-                <div class="allround-section-content">
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
                     <!-- Tab title -->
                     <h2 class="mb-5">Projects</h2>
 
