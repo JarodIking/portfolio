@@ -31,7 +31,7 @@ class CreateSocialTable extends Migration
      */
     public function down()
     {
-        Schema::table('socials', function (Blueprint $table) {
+        Schema::table('social', function (Blueprint $table) {
             $table->dropForeign(['content']);
             $table->dropForeign(['icon']);
         });
