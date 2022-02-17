@@ -13,13 +13,13 @@ class CreateListitemTable extends Migration
      */
     public function up()
     {
-        Schema::create('listitem', function (Blueprint $table) {
+        Schema::create('listitems', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
 
             $table->id();
             $table->string('text', 50);
-            $table->foreignId('content')->constrained('content');
+            $table->foreignId('contents')->constrained('contents');
             $table->foreignId('icon')->constrained('icons');
 
         });
@@ -33,11 +33,11 @@ class CreateListitemTable extends Migration
     public function down()
     {
         //drop foreign key
-        Schema::table('listitem', function (Blueprint $table) {
-            $table->dropForeign(['content']);
+        Schema::table('listitems', function (Blueprint $table) {
+            $table->dropForeign(['contents']);
             $table->dropForeign(['icon']);
         });
-        
-        Schema::dropIfExists('listitem');
+
+        Schema::dropIfExists('listitems');
     }
 }

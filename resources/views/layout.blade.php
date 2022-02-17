@@ -13,8 +13,8 @@
 
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('/css/app.css')}}"rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{{ asset('/css/styles.css')}}"rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ asset('/css/app.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{ asset('/css/styles.css')}}" type="text/css">
     </head>
 <body>
         <!-- Navigation-->
@@ -26,13 +26,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="exp">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="edu">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="websites">Websites</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="projects">Projects</a></li>
+                    @foreach($tabs as $tab)
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{$tab->id}}">{{$tab->name}}</a></li>
+                    @endforeach
                 </ul>
             </div>
         </nav>

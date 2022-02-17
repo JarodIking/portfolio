@@ -40,11 +40,22 @@ class socialSeeder extends Seeder
                 'icon' => 5,
                 'social' => null,
             ],
+            [
+                'content' => 7,
+                'icon' => 8,
+                'social' => "https://www.linkedin.com/in/jarod-iking-907004162/",
+            ],
+            [
+                'content' => 7,
+                'icon' => 9,
+                'social' => "https://github.com/JarodIking",
+
+            ],
         ];
 
         foreach ($icons as $icon) {
-            DB::table('social')->insert([
-                'content' => $icon['content'],
+            DB::table('socials')->insert([
+                'contents' => $icon['content'],
                 'icon' => $icon['icon'],
                 'social' => $icon['social'],
             ]);
