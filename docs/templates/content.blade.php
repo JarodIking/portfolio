@@ -3,8 +3,8 @@
 @section('content')
 
             <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
+            <section class="allround-section" id="interests">
+                <div class="allround-section-content">
                     <!-- Tab title -->
                     <h2 class="mb-5">Projects</h2>
 
@@ -28,7 +28,7 @@
                             </div>
                             <br/>
 
-                            <!-- Content List -->
+                            <!-- Content List --> 
                             <p class="mb-0">Requirements</p>
                             <ul class="mb-0">
                                 <li>Windows 10 or greater</li>
