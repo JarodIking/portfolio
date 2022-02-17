@@ -14,7 +14,7 @@ class CreateContentTable extends Migration
      */
     public function up()
     {
-        Schema::create('content', function (Blueprint $table) {
+        Schema::create('contents', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
 
@@ -27,7 +27,7 @@ class CreateContentTable extends Migration
             $table->string('to', 50)->nullable();
             $table->string('link', 200)->nullable();
             $table->datetime('deleted')->nullable();
-            $table->datetime('updated')->nullable();   
+            $table->datetime('updated')->nullable();
             $table->string('list_title', 50)->nullable();
         });
     }
@@ -40,10 +40,10 @@ class CreateContentTable extends Migration
     public function down()
     {
         //drop foreign key
-        Schema::table('content', function (Blueprint $table) {
+        Schema::table('contents', function (Blueprint $table) {
             $table->dropForeign(['tabs']);
         });
-        
-        Schema::dropIfExists('content');
+
+        Schema::dropIfExists('contents');
     }
 }
