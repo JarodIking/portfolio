@@ -21,7 +21,7 @@ class userSeeder extends Seeder
             'lastname' => 'iking',
             'username' => 'admin',
             'password' => Hash::make('admin'),
-            'email' => 'jarodiking@gmail.com',
+            'email' => 'jarodiking17@gmail.com',
             'level' => 1,
             'active' => 0,
             'fontawesome_kit' => "<script src='https://kit.fontawesome.com/069b301ca8.js' crossorigin='anonymous'></script>"

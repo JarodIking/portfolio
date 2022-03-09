@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Response;
 use App\Http\Controllers\TabsController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +22,12 @@ Route::get('/', [TabsController::class, 'index']);
 
 //load tabs
 Route::get('/{tab}', [TabsController::class, 'show']);
+
+//admin routes
+Route::prefix('admin')->group(function () {
+    Route::get('/{page}', [AdminController::class, 'show']);
+    Route::post('/signin', [UserController::class, 'login'])->name('admin.login');
+});
 
 
 
