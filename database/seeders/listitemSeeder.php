@@ -73,12 +73,12 @@ class listitemSeeder extends Seeder
         ];
 
         foreach ($listitems as $item) {
-            DB::table('listitem')->insert([
+            DB::table('listitems')->insert([
                 'text' => $item['text'],
-                'content' => $item['content'],
+                'contents' => $item['content'],
                 'icon' => $item['icon'],
             ]);
-        }   
+        }
 
     }
 }

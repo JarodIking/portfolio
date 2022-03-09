@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Content extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'id',
+        'tabs',
+        'title',
+        'sub_title',
+        'description',
+        'form',
+        'to',
+        'link',
+        'deleted',
+        'list_title',
+    ];
+
+}

@@ -16,31 +16,31 @@ class iconSeeder extends Seeder
     {
         $icons = [
             [
-                "icon_html" => "<i class='fab fa-html5'></i>"
+                "icon_html" => "fab fa-html5"
             ],
             [
-                "icon_html" => "<i class='fab fa-css3-alt'></i>"
+                "icon_html" => "fab fa-css3-alt"
             ],
             [
-                "icon_html" => "<i class='fab fa-js-square'></i>"
+                "icon_html" => "fab fa-js-square"
             ],
             [
-                "icon_html" => "<i class='fab fa-php'></i>"
+                "icon_html" => "fab fa-php"
             ],
             [
-                "icon_html" => "<i class='fab fa-bootstrap'></i>"
+                "icon_html" => "fab fa-bootstrap"
             ],
             [
-                "icon_html" => "<i class='fab fa-laravel'></i>"
+                "icon_html" => "fab fa-laravel"
             ],
             [
-                "icon_html" => "<i class='fas fa-check'></i>"
+                "icon_html" => "fas fa-check"
             ],
             [
-                "icon_html" => "<i class='fab fa-linkedin-in'></i>"
+                "icon_html" => "fab fa-linkedin-in"
             ],
             [
-                "icon_html" => "<i class='fab fa-github'></i>"
+                "icon_html" => "fab fa-github"
             ],
         ];
 
@@ -48,7 +48,7 @@ class iconSeeder extends Seeder
             DB::table('icons')->insert([
                 'icon_html' => $icon['icon_html'],
             ]);
-        }   
+        }
 
     }
 }
