@@ -20,7 +20,7 @@ class CreateListitemTable extends Migration
             $table->id();
             $table->string('text', 50);
             $table->foreignId('contents')->constrained('contents');
-            $table->foreignId('icon')->constrained('icons');
+            $table->foreignId('icon_id')->constrained('icons');
 
         });
     }
@@ -35,7 +35,7 @@ class CreateListitemTable extends Migration
         //drop foreign key
         Schema::table('listitems', function (Blueprint $table) {
             $table->dropForeign(['contents']);
-            $table->dropForeign(['icon']);
+            $table->dropForeign(['icon_id']);
         });
 
         Schema::dropIfExists('listitems');

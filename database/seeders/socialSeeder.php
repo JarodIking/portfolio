@@ -56,7 +56,7 @@ class socialSeeder extends Seeder
         foreach ($icons as $icon) {
             DB::table('socials')->insert([
                 'contents' => $icon['content'],
-                'icon' => $icon['icon'],
+                'icon_id' => $icon['icon'],
                 'social' => $icon['social'],
             ]);
         }

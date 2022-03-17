@@ -1,14 +1,13 @@
 @extends('layout')
 
 @section('content')
-
     <!-- Interests-->
     <section class="resume-section" id="interests">
         <div class="resume-section-content">
             <!-- Tab title -->
             <h2 class="mb-5">{{$tabName}}</h2>
 
-            @foreach($content['contents'] as $card)
+            @foreach($content as $card)
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
                         <!-- Content Title -->
@@ -32,16 +31,15 @@
                         @endif
 
                         <!-- Social icons / icons-->
-                        @if (count($card->socials) > 0)
+                        @if ($card->social)
                             <div class="social-icons">
-                                @foreach($card->socials as $social)
+                                @foreach($card->social as $social)
                                     @if($social->social)
-                                        <a class="social-icon" href="{{$social->social}}" target="_blank">
-                                            <i class="fab fa-{{$social->icon_html}}"></i>
-                                        </a>
+                                            <a class="social-icon" href="{{$social->social}}" target="_blank">
+                                                <i class="fab fa-{{$social->icon->icon_html}}"></i>
+                                            </a>
                                     @else
-                                    <li class="{{$social->icon_html}} fa-5x">
-                                    </li>
+                                        <li class="{{$social->icon->icon_html}} fa-5x"></li>
                                     @endif
                                 @endforeach
                             </div>
@@ -52,16 +50,16 @@
                         @if ($card->list_title)
                             <p class="mb-0">{{$card->list_title}}</p>
                             <ul class="fa-ul mb-0">
-                                @foreach($card->list as $item)
+                                @foreach($card->listitem as $item)
                                     <li>{{$item->text}}</li>
                                 @endforeach
                             </ul>
                             <br>
                         @else
                             <ul class="fa-ul mb-0">
-                                @foreach($card->list as $item)
+                                @foreach($card->listitem as $item)
                                     <li>
-                                        <span class="{{$item->icon_html}}"></span>
+                                        <span class="{{$item->icon->icon_html}}"></span>
                                         {{$item->text}}
                                     </li>
                                 @endforeach

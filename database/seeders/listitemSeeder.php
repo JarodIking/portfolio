@@ -76,7 +76,7 @@ class listitemSeeder extends Seeder
             DB::table('listitems')->insert([
                 'text' => $item['text'],
                 'contents' => $item['content'],
-                'icon' => $item['icon'],
+                'icon_id' => $item['icon'],
             ]);
         }
 

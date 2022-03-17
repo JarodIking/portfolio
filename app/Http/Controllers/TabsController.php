@@ -19,11 +19,10 @@ class TabsController extends Controller
     public function index(Tabs $tabs, Content $content, Social $social, Listitem $listitem)
     {
         $tabId = 1;
-        $content = $tabs->getContentsPerTab($content, $social, $listitem, $tabId);
 
         return view('content', [
             'tabs' => $tabs->all(),
-            'content' => $content,
+            'content' => Tabs::find($tabId)->content,
             'tabName' => $tabs->find($tabId)->name
         ]);
     }
@@ -55,15 +54,13 @@ class TabsController extends Controller
      * @param  \App\Models\Tabs  $tabs
      * @return \Illuminate\Http\Response
      */
-    public function show(Tabs $tabs, Content $content, Social $social, Listitem $listitem,int $tabId)
+    public function show(Tabs $tabs, int $tabId)
     {
-        $content = $tabs->getContentsPerTab($content, $social, $listitem, $tabId);
-
         return view('content', [
 //            'content' => $content->Where('tabs', $tabId)->get(),
             'tabs' => $tabs->all(),
             'tabName' => $tabs->find($tabId)->name,
-            'content' => $content
+            'content' => Tabs::find($tabId)->content,
         ]);
     }
 

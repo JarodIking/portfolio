@@ -19,7 +19,7 @@ class CreateSocialTable extends Migration
 
             $table->id();
             $table->foreignId('contents')->constrained('contents');
-            $table->foreignId('icon')->constrained('icons');
+            $table->foreignId('icon_id')->constrained('icons');
             $table->string('social', 500)->nullable();
         });
     }
@@ -33,7 +33,7 @@ class CreateSocialTable extends Migration
     {
         Schema::table('socials', function (Blueprint $table) {
             $table->dropForeign(['contents']);
-            $table->dropForeign(['icon']);
+            $table->dropForeign(['icon_id']);
         });
 
         Schema::dropIfExists('socials');

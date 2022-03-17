@@ -22,4 +22,14 @@ class Content extends Model
         'list_title',
     ];
 
+    public function listitem()
+    {
+        return $this->hasMany(Listitem::class, 'contents')->with('icon');
+    }
+
+    public function social()
+    {
+        return $this->hasMany(Social::class, 'contents')->with('icon');
+    }
+
 }
