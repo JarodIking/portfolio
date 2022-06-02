@@ -13,12 +13,12 @@ class CreateSocialTable extends Migration
      */
     public function up()
     {
-        Schema::create('social', function (Blueprint $table) {
+        Schema::create('socials', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
 
             $table->id();
-            $table->foreignId('content')->constrained('content');
+            $table->foreignId('contents')->constrained('contents');
             $table->foreignId('icon')->constrained('icons');
             $table->string('social', 500)->nullable();
         });
@@ -31,11 +31,11 @@ class CreateSocialTable extends Migration
      */
     public function down()
     {
-        Schema::table('social', function (Blueprint $table) {
-            $table->dropForeign(['content']);
+        Schema::table('socials', function (Blueprint $table) {
+            $table->dropForeign(['contents']);
             $table->dropForeign(['icon']);
         });
 
-        Schema::dropIfExists('social');
+        Schema::dropIfExists('socials');
     }
 }

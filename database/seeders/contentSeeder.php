@@ -14,7 +14,7 @@ class contentSeeder extends Seeder
      */
     public function run()
     {
-        $content = 
+        $content =
         [
             [
                 'tabs' => 1,
@@ -79,6 +79,18 @@ class contentSeeder extends Seeder
             [
                 'tabs' => 1,
                 'title' => 'Workflow',
+                'sub_title' => null,
+                'description' => null,
+                'from' => null,
+                'to' => null,
+                'link' => null,
+                'deleted' => null,
+                'updated' => null,
+                'list_title' => null,
+            ],
+            [
+                'tabs' => 2,
+                'title' => 'About me',
                 'sub_title' => null,
                 'description' => null,
                 'from' => null,
@@ -272,7 +284,7 @@ class contentSeeder extends Seeder
         ];
 
         foreach ($content as $tab) {
-            DB::table('content')->insert([
+            DB::table('contents')->insert([
                 'tabs' => $tab['tabs'],
                 'title' => $tab['title'],
                 'sub_title' => $tab['sub_title'],

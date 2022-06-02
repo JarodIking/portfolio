@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Response;
+use App\Http\Controllers\TabsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,55 +15,15 @@ use Illuminate\Support\Facades\Response;
 |
 */
 
-Route::get('/', function () {
-    return view('skills');
-});
+//load index page
+Route::get('/', [TabsController::class, 'index']);
 
-Route::get('/about', function () {
-    return view('about');
-});
+//load tabs
+Route::get('/{tab}', [TabsController::class, 'show']);
 
-Route::get('/exp', function () {
-    return view('exp');
-});
-
-Route::get('/edu', function () {
-    return view('edu');
-});
-
-Route::get('/skills', function () {
-    return view('skills');
-});
-
-Route::get('/interests', function () {
-    return view('interests');
-});
-
-Route::get('/websites', function () {
-    return view('web');
-});
-
-Route::get('/projects', function () {
-    return view('projects');
-});
-
-
-//external Websites
-Route::get('/stennizworkshops.nl', function(){
-    return redirect('https://stennizworkshops.nl');
-});
-
-Route::get('/50plusroadtrip.nl', function(){
-    return redirect('https://50plusroadtrip.nl');
-});
-
-Route::get('/jarodiking.com', function(){
-    return redirect('https://jarodiking.com');
-});
 
 
 //downloads
-
 Route::get('/downloadTheInvaders', function()
 {
     $file_name = "TheInvaders.zip";
